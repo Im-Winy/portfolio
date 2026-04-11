@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINY - Développeur web</title>
+    <meta name="description" content="portfolio">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <!-- Bootstrap + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-warning" href="#"> Portfolio de WINY</a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-house"></i> HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projets"><i class="bi bi-briefcase"></i>
+                                PROJETS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#footer"><i class="bi bi-telephone"></i>
+                                CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="bg-dark">
+        <!-- INFOS -->
+        <section class="text-white d-flex align-items-center" style="height:70vh;">
+
+            <div class="container p-0">
+                <div class="w-50  mx-auto">
+                    <h1 class="fw-white fs-3">Je suis</h1>
+                    <h2 class="fw-bold text-warning">William Nyacka</h2>
+                    <p class="fw-white fs-3">Développeur Web</p>
+                    <p><i class="bi bi-telephone"></i> 06 51 47 81 23</p>
+                    <p><a href="mailto:williamnyacka14@gmail.com" class="link-underline-dark text-white">
+                            <i class="bi bi-envelope"></i> williamnyacka14@gmail.com</a>
+                    </p>
+
+                    <div class="mb-3">
+                        <!-- Github -->
+                        <a href="https://github.com/Im-Winy" class="text-warning fs-4 me-2"><i
+                                class="bi bi-github"></i></a>
+
+                        <!-- Linkedin -->
+                        <a href="https://fr.linkedin.com/in/william-nyacka-465629279" class="text-warning fs-4"><i
+                                class="bi bi-linkedin"></i></a>
+
+                    </div>
+
+                    <div>
+                        <!-- Bouton télécharger -->
+                        <a href="./assets/William_Nyacka_CV_Dev.pdf" download class="btn btn-warning">
+                            <i class="bi bi-download"></i> Télécharger mon CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container p-0">
+                <div class="position-relative">
+                    <div style="
+                        left: 30%;
+                        z-index: 1;
+                        position: absolute;
+                        width: 40%;
+                        height: 20vw;
+                        background-color: #ffc107;
+                        transform: rotate(25deg);">
+                    </div>
+                    <div style="
+                        left: 35%;
+                        z-index: 1;
+                        position: absolute;
+                        width: 29%;
+                        height: 20vw;
+                        background-color: #212529;
+                        transform: rotate(0deg);">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/avatar.png" style="width: 200px; position: relative; z-index: 2;"
+                            class="img-fluid" alt="persona">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="py-5 text-center">
+            <div class="container">
+                <h2 class="text-white mb-4">SERVICES</h2>
+
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <div class="card p-3 bg-dark text-white border-light" style="height: 14rem;">
+                            <h3 class="text-warning fw-light"><i class="bi bi-images"></i> UX / UI design</h3>
+                            <p style="font-size: 14px;">Conception d’interfaces modernes, intuitives
+                                et
+                                responsive avec
+                                <strong>HTML</strong>, <strong>CSS</strong> et <strong>Bootstrap</strong>, incluant le
+                                maquettage réalisé avec <strong>Figma</strong> ou <strong>Adobe XD</strong>, avec une
+                                attention particulière à l’expérience utilisateur, l’ergonomie et l’accessibilité.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card p-3 bg-dark text-white border-light" style="height: 14rem;">
+                            <h3 class="text-warning fw-light"><i class="bi bi-code-slash"></i> Développement</h3>
+                            <p style="font-size: 14px;">Conception d’applications web modernes avec
+                                <strong>Angular</strong> pour le frontend et
+                                <strong>Spring Boot (Java)</strong> pour le backend.
+                                Création d’API REST, gestion des données et intégration complète.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card p-3 bg-dark text-white border-light" style="height: 14rem;">
+                            <h3 class="text-warning fw-light"><i class="bi bi-file-lock2"></i> Sécurité</h3>
+                            <p style="font-size: 14px;">Mise en place d’authentification sécurisée
+                                avec
+                                <strong>JWT</strong>, gestion des rôles (USER / ADMIN)
+                                et protection des routes côté frontend et backend.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card p-3 bg-dark text-white border-light" style="height: 14rem;">
+                            <h3 class="text-warning fw-light"><i class="bi bi-rocket-takeoff"></i> Déploiement</h3>
+                            <p style="font-size: 14px;">Déploiement d’applications
+                                <strong>Angular</strong> et
+                                <strong>Spring Boot</strong> avec conteneurisation via <strong>Docker</strong> et
+                                gestion
+                                des environnements (dev, test, production).
+                                Mise en place de tests automatisés avec <strong>Mockito</strong> et
+                                <strong>Selenium</strong> afin de garantir la qualité, la
+                                stabilité et la fiabilité des applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETS -->
+        <section id="projets" class="py-5 text-center">
+            <h2 class="mb-4 text-white">PROJETS</h2>
+            <div class="container">
+                <div class="row g-3">
+
+                    <div class="col-md-4">
+                        <figure>
+                            <img src="./assets/image-01.jpg" id="projet1" class="img-fluid" alt="image">
+                            <figcaption>
+                                <h3 class="text-white fw-light">Projet 1</h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-4">
+                        <figure>
+                            <img src="./assets/image-02.jpg" id="projet2" class="img-fluid" alt="image">
+                            <figcaption>
+                                <h3 class="text-white fw-light">Projet 2</h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-4">
+                        <figure>
+                            <img src="./assets/image-03.png" id="projet3" class="img-fluid" alt="image">
+                            <figcaption>
+                                <h3 class="text-white fw-light">Projet 3</h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODALE -->
+    <div id="modale" class="modale">
+        <div class="overlay"></div>
+
+        <div class="modal-card">
+
+            <img src="./assets/image-03.png" class="img-fluid" alt="image">
+
+
+            <div class="description">
+                <h4>Nom du projet</h4>
+
+                <h5>Projet</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+                <h5>Procédé</h5>
+                <p>Curabitur non magna vel nisi faucibus fermentum...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h2>CONTACT</h2>
+            <p>Disponible pour vos projets</p>
+            <p><i class="bi bi-telephone"></i> 06 51 47 81 23</p>
+            <p><i class="bi bi-envelope"></i> williamnyacka14@gmail.com</p>
+            <p>&copy; - Portfolio - 2026&nbsp;</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script>
+        const modale = document.getElementById("modale");
+
+        // Ouvrir au clic sur une image
+        document.querySelector("#projet1").addEventListener("click", () => {
+            modale.style.display = "flex";
+        });
+
+        document.querySelector("#projet2").addEventListener("click", () => {
+            modale.style.display = "flex";
+        });
+
+        document.querySelector("#projet3").addEventListener("click", () => {
+            modale.style.display = "flex";
+        });
+
+        // Fermer quand on clique sur le fond noir
+        document.querySelector(".overlay").addEventListener("click", () => {
+            modale.style.display = "none";
+        }); 
+    </script>
+</body>
+
+</html>
