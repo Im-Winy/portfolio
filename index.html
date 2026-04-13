@@ -58,7 +58,7 @@
                             <i class="bi bi-envelope"></i> williamnyacka14@gmail.com</a>
                     </p>
 
-                    <div class="mb-3">
+                    <div class="mb-1">
                         <!-- Github -->
                         <a href="https://github.com/Im-Winy" class="text-warning fs-4 me-2"><i
                                 class="bi bi-github"></i></a>
@@ -99,8 +99,8 @@
                         transform: rotate(0deg);">
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
-                        <img src="./assets/avatar.png" style="width: 200px; position: relative; z-index: 2;"
-                            id="image" class="img-fluid" alt="persona">
+                        <img src="./assets/avatar.png" style="width: 200px; position: relative; z-index: 2;" id="image"
+                            class="img-fluid" alt="persona">
                     </div>
                 </div>
             </div>
@@ -170,7 +170,7 @@
 
                     <div class="col-md-4">
                         <figure>
-                            <img src="./assets/image-01.jpg" id="projet1" class="img-fluid" alt="image">
+                            <img src="./assets/image-01.png" id="projet1" class="img-fluid" alt="image">
                             <figcaption>
                                 <h3 class="text-white fw-light">Projet 1</h3>
                             </figcaption>
@@ -179,7 +179,7 @@
 
                     <div class="col-md-4">
                         <figure>
-                            <img src="./assets/image-02.jpg" id="projet2" class="img-fluid" alt="image">
+                            <img src="./assets/image-02.png" id="projet2" class="img-fluid" alt="image">
                             <figcaption>
                                 <h3 class="text-white fw-light">Projet 2</h3>
                             </figcaption>
@@ -203,6 +203,46 @@
     <!-- MODALE -->
     <div id="modale" class="modale">
         <div class="overlay"></div>
+
+        <div class="modal-card">
+
+            <img src="./assets/image-01.png" class="img-fluid" alt="image">
+
+
+            <div class="description">
+                <h4>Nom du projet</h4>
+
+                <h5>Projet</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+                <h5>Procédé</h5>
+                <p>Curabitur non magna vel nisi faucibus fermentum...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modale2" class="modale2">
+        <div class="overlay2"></div>
+
+        <div class="modal-card">
+
+            <img src="./assets/image-02.png" class="img-fluid" alt="image">
+
+
+            <div class="description">
+                <h4>Nom du projet</h4>
+
+                <h5>Projet</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+                <h5>Procédé</h5>
+                <p>Curabitur non magna vel nisi faucibus fermentum...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modale3" class="modale3">
+        <div class="overlay3"></div>
 
         <div class="modal-card">
 
@@ -238,6 +278,8 @@
     <!-- JS -->
     <script>
         const modale = document.getElementById("modale");
+        const modale2 = document.getElementById("modale2");
+        const modale3 = document.getElementById("modale3");
 
         // Ouvrir au clic sur une image
         document.querySelector("#projet1").addEventListener("click", () => {
@@ -245,17 +287,25 @@
         });
 
         document.querySelector("#projet2").addEventListener("click", () => {
-            modale.style.display = "flex";
+            modale2.style.display = "flex";
         });
 
         document.querySelector("#projet3").addEventListener("click", () => {
-            modale.style.display = "flex";
+            modale3.style.display = "flex";
         });
 
         // Fermer quand on clique sur le fond noir
         document.querySelector(".overlay").addEventListener("click", () => {
             modale.style.display = "none";
-        }); 
+        });
+
+        document.querySelector(".overlay2").addEventListener("click", () => {
+            modale2.style.display = "none";
+        });
+
+        document.querySelector(".overlay3").addEventListener("click", () => {
+            modale3.style.display = "none";
+        });
     </script>
 </body>
 

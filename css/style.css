@@ -1,10 +1,22 @@
-.modale {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin-bottom: 1px !important;
+}
+
+.modale,
+.modale2,
+.modale3 {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: none;/* cachée par défaut */
+    display: none;
+    /* cachée par défaut */
     justify-content: center;
     align-items: center;
     transition: 10s;
@@ -12,7 +24,9 @@
 }
 
 /* Fond noir 75% */
-.overlay {
+.overlay,
+.overlay2,
+.overlay3 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -49,14 +63,13 @@
     }
 
     div.mx-auto {
-        
         width: 90 !important;
     }
 
     #info .container p,
     h1,
     .fs-3 {
-        font-size: 8px !important;
+        font-size: 10px !important;
         width: 150px !important;
     }
 
